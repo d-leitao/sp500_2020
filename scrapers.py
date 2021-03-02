@@ -39,6 +39,7 @@ def info_build(rescrape=False):
 
     return info_df
 
+
 def weights_build(rescrape):
 
     if rescrape == False and os.path.exists('data/weights.csv'):
