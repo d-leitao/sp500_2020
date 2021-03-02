@@ -100,7 +100,6 @@ def panel_build(rescrape=False): #scrapes ticker prices
 
     panel.columns = [t.replace('-', '.') for t in panel.columns]
     panel.Date = pd.to_datetime(panel.Date)
-    panel.set_index('Date', inplace=True)
 
     panel.to_csv('data/panel.csv')
     
