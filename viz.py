@@ -31,7 +31,7 @@ def growth_by_weight(cum_growth_long):
         hover_data=['Security', 'Ticker', 'Industry', 'Date', 'Cum_Growth'],
         labels={'Weight': '<b>Weight</b>', 'Cum_Growth': '<b>Growth</b>'},
         title='<b>Individual Growth of Stocks in the S&P 500 Index <br>vs. Market Cap Weight (2020)</b>',
-        width=800, height=600)
+        width=1000, height=600)
 
     fig.update_yaxes(tickformat="%")
     fig.update_xaxes(tickformat="%")
