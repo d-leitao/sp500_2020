@@ -1,4 +1,4 @@
-,ticker,security,industry
+,Ticker,Security,Industry
 0,MMM,3M Company,Industrials
 1,ABT,Abbott Laboratories,Health Care
 2,ABBV,AbbVie Inc.,Health Care
@@ -453,8 +453,7 @@
 451,VTR,Ventas Inc,Real Estate
 452,VRSN,Verisign Inc.,Information Technology
 453,VRSK,Verisk Analytics,Industrials
-454,VZ,Verizon Communications,"Communication Services
-"
+454,VZ,Verizon Communications,Communication Services
 455,VRTX,Vertex Pharmaceuticals Inc,Health Care
 456,VFC,VF Corporation,Consumer Discretionary
 457,VIAC,ViacomCBS,Communication Services

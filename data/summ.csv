@@ -1,4 +1,4 @@
-,ticker,security,industry,weight
+,Ticker,Security,Industry,Weight
 0,MMM,3M Company,Industrials,0.00332975812214418
 1,ABT,Abbott Laboratories,Health Care,0.006305398164974009
 2,ABBV,AbbVie Inc.,Health Care,0.006059632058713238
@@ -453,8 +453,7 @@
 451,VTR,Ventas Inc,Real Estate,0.0006213829134997319
 452,VRSN,Verisign Inc.,Information Technology,0.0007209798855619381
 453,VRSK,Verisk Analytics,Industrials,0.001072846101876201
-454,VZ,Verizon Communications,"Communication Services
-",0.008122045723623806
+454,VZ,Verizon Communications,Communication Services,0.008122045723623806
 455,VRTX,Vertex Pharmaceuticals Inc,Health Care,0.0020167099342450956
 456,VFC,VF Corporation,Consumer Discretionary,0.0009061880437889403
 457,VIAC,ViacomCBS,Communication Services,0.000668136840362554

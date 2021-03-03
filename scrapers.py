@@ -23,16 +23,16 @@ def info_build(rescrape=False):
 
         ticker = row_tds[0].text[:-1]
         security = row_tds[1].text
-        industry = row_tds[3].text
+        industry = row_tds[3].text.replace('\n', '') # individual problem
         date_added = row_tds[6].text
 
         row_lists.append([ticker, security, industry, date_added])
 
-    info_df = pd.DataFrame(row_lists, columns=['ticker', 'security', 'industry', 'date_added'])
+    info_df = pd.DataFrame(row_lists, columns=['Ticker', 'Security', 'Industry', 'Date_added'])
     # only companies that were in the index for the whole year
     info_df = (info_df
-        .loc[~info_df.date_added.str.contains('2020'),:]
-        .drop('date_added', axis='columns')
+        .loc[~info_df.Date_added.str.contains('2020'),:]
+        .drop('Date_added', axis='columns')
         .reset_index(drop=True))
 
     info_df.to_csv('data/info.csv')
@@ -59,7 +59,7 @@ def weights_build(rescrape):
 
         row_lists.append([ticker, weight])
 
-    weights = pd.DataFrame(row_lists, columns=['ticker', 'weight'])
+    weights = pd.DataFrame(row_lists, columns=['Ticker', 'Weight'])
     weights.to_csv('data/weights.csv')
 
     return weights
@@ -74,8 +74,8 @@ def summ_build(rescrape=False): #puts together info and weights
     i = info_build(rescrape)
     w = weights_build(rescrape)
 
-    summ = i.merge(w, how='left', on='ticker')
-    summ.weight = summ.weight / summ.weight.sum()
+    summ = i.merge(w, how='left', on='Ticker')
+    summ.Weight = summ.Weight / summ.Weight.sum()
     
     if not summ[summ.isnull().any(axis=1)].empty: #missing weights
         print('There are missing weight values for the tickers in info!')
