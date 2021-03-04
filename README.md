@@ -11,5 +11,6 @@ panel_build() - scrapes yahoo finance for daily adjusted close prices
 </p>
 <p><b>viz.py</b> includes the plotly code for some of the vizualizations</p>
 <p><b>notebook.ipynb</b> presents the analysis</p><br>
+<p><b>analysis.html</b> contains the html export of the analysis</p><br>
 
 <p>(1) <i>kept only the stocks that were present in the Index throughout the whole year</i></p>
