@@ -4,10 +4,10 @@
 
 <p>
 <b>scrapers.py</b><br>
-info_build() - scraping wikipedia's S&P 500 Index stock list on 2020-12-31<br>
-weights_build() - scraping market cap weights on 2020-12-20<br>
+info_build() - scrapes wikipedia's S&P 500 Index stock list on 2020-12-31<br>
+weights_build() - scrapes market cap weights from slickcharts.com on 2020-12-20<br>
 summ_build() - joining the information for both (1) <br>
-panel_build() - scrapes yahoo for daily adjusted close prices
+panel_build() - scrapes yahoo finance for daily adjusted close prices
 </p>
 <p><b>viz.py</b> includes the plotly code for some of the vizualizations</p>
 <p><b>notebook.ipynb</b> presents the analysis</p><br>
