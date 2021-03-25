@@ -2,6 +2,8 @@
 <p>Analysis of the S&amp;P 500 Index throughout 2020<br>
 (using plotly+pandas in python)</p><br>
 
+<img src="growth_by_weight.png" alt="growth_by_weight.png"><br><br>
+
 
 <p><b>analysis.html</b> contains all the results and plots 
 (exported from <b>notebook.ipynb</b>)</p>
